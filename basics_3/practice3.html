@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            background-color: bisque;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click</button>
+
+    <script>
+        console.log("Hii");
+
+        document.getElementById("btn").addEventListener("click", function cb() {
+            setTimeout(function() {
+                console.log("hello again!");
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+
+        console.log("tata bbye");
+    </script>
+</body>
+</html>

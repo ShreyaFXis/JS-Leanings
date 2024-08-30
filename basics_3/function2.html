@@ -1,0 +1,30 @@
+<!-- Take a user input and count the vowels present in the sentence. -->
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<input type="text" id="nameInput" placeholder="Enter any Sentence : ">
+<button onclick="greetUser()">Submit</button>
+
+<script>
+function greetUser() {
+    let count = 0;
+    let userInput = document.getElementById("nameInput").value;
+    for(const char of userInput)
+    {
+        if(char === 'a'|| char === 'e'||char === 'i'||char === 'o'||char === 'u'||
+         char === 'A'|| char === 'E'||char === 'I'||char === 'O'||char === 'U')
+        {
+            count++;
+        }
+    }
+    alert("Hello, " + userInput + "!\nTotal vowels in this given statement : " + count);
+    
+    //alert("OK, bye!")
+
+}
+</script>
+
+</body>
+</html>
